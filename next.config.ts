@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Note: the floating "dev" indicator only appears in `next dev`.
+  // It is not shown in production builds (Vercel).
 };
 
 export default nextConfig;

@@ -121,17 +121,6 @@ export default function Home() {
     }
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const { name, email, message } = formState;
-    const subject = `Portfolio inquiry from ${name || "a visitor"}`;
-    const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-    const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
-  };
-
   const isFormValid = useMemo(() => {
     return formState.email.trim().length > 3 && formState.message.trim().length > 5;
   }, [formState.email, formState.message]);
@@ -198,12 +187,12 @@ export default function Home() {
             clear plans and shippable UI.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link
+            <a
               href={resumeUrl}
               className="rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--accent-2)]"
             >
               Download résumé
-            </Link>
+            </a>
             <a
               href="#contact"
               className="rounded-full border border-[var(--border)] bg-[var(--card)] px-5 py-3 text-sm font-semibold text-[var(--foreground)] transition hover:-translate-y-0.5 hover:shadow-lg"
@@ -258,10 +247,17 @@ export default function Home() {
           items={["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Vite", "Responsive UI"]}
         />
         <InfoCard
-          title="APIs, Auth & Tooling"
+          title="Backend & Databases"
           items={[
+            "Django REST Framework (integration)",
             "REST APIs",
             "JWT authentication",
+            "SQL basics (PostgreSQL / MySQL)",
+          ]}
+        />
+        <InfoCard
+          title="Tooling & Delivery"
+          items={[
             "Axios",
             "Git & GitHub",
             "Vercel / Render",
@@ -276,7 +272,7 @@ export default function Home() {
       />
       <div className="grid gap-4">
         <TimelineItem
-          title="Nova Studios — Project Manager (PM)"
+          title="Nova Studios — Web Development Team Lead"
           meta="Dec 2025 – Present"
           bullets={[
             "Coordinate web/software projects between developers, designers, and stakeholders",
@@ -387,11 +383,18 @@ export default function Home() {
             <p>Location: Nairobi, Kenya · Remote friendly</p>
           </div>
         </div>
-        <form className="space-y-4" onSubmit={handleSubmit}>
+        <form
+          className="space-y-4"
+          action="https://formsubmit.co/omondisylasowuor@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New portfolio enquiry" />
+          <input type="hidden" name="_captcha" value="false" />
           <div className="flex flex-col gap-2">
             <label className="text-sm font-semibold">Name</label>
             <input
               type="text"
+              name="name"
               className="rounded-xl border border-[var(--border)] bg-white/80 px-3 py-3 text-sm text-[var(--foreground)] outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
               placeholder="Your name"
               value={formState.name}
@@ -405,6 +408,7 @@ export default function Home() {
             <input
               type="email"
               required
+              name="email"
               className="rounded-xl border border-[var(--border)] bg-white/80 px-3 py-3 text-sm text-[var(--foreground)] outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
               placeholder="you@company.com"
               value={formState.email}
@@ -418,6 +422,7 @@ export default function Home() {
             <textarea
               required
               rows={4}
+              name="message"
               className="rounded-xl border border-[var(--border)] bg-white/80 px-3 py-3 text-sm text-[var(--foreground)] outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
               placeholder="Project details, timeline, links…"
               value={formState.message}
@@ -431,11 +436,10 @@ export default function Home() {
             disabled={!isFormValid}
             className="w-full rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-white transition enabled:hover:-translate-y-0.5 enabled:hover:bg-[var(--accent-2)] disabled:cursor-not-allowed disabled:opacity-60"
           >
-            Send email
+            Send message
           </button>
           <p className="text-xs text-[var(--muted)]">
-            This opens your email client with a pre-filled message. Swap
-            contactEmail in the code once you’re ready.
+            This sends directly to my inbox—no mail app required.
           </p>
         </form>
       </section>
