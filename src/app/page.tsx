@@ -176,12 +176,12 @@ export default function Home() {
             <span className={badgeClass}>Based in Nairobi</span>
           </div>
           <h1 className="text-3xl font-semibold leading-tight sm:text-4xl">
-            Frontend-focused developer building clean dashboards, client portals,
+            Fullstack developer building clean dashboards, client portals,
             and production-ready interfaces.
           </h1>
           <p className="mt-4 max-w-2xl text-base text-[var(--muted)]">
-            I’m an enthusiast and startup co-founder at Copyme. I’m comfortable
-            with React, modern JavaScript tooling, REST APIs, and auth flows, with
+            I’m a techenthusiast and startup co-founder at Copyme. I’m comfortable
+            with React, modern JavaScript tooling,Node.js,Django and REST APIs, and auth flows, with
             exposure to Django REST integration and deployment workflows. I also
             support delivery through project coordination—turning requirements into
             clear plans and shippable UI.
@@ -439,13 +439,13 @@ export default function Home() {
             Send message
           </button>
           <p className="text-xs text-[var(--muted)]">
-            This sends directly to my inbox—no mail app required.
+            This sends directly to my inbox.
           </p>
         </form>
       </section>
 
       <footer className="flex flex-col gap-2 border-t border-[var(--border)] pt-6 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} Sylas Omondi. Built with Next.js & Vercel.</p>
+        <p>© {new Date().getFullYear()} Sylas Omondi.</p>
         <div className="flex gap-3">
           <Link href="https://github.com/0768535032" target="_blank" rel="noreferrer">
             GitHub

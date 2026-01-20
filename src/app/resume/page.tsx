@@ -25,7 +25,7 @@ export default function ResumePage() {
         <header className="space-y-2">
           <h1 className="text-3xl font-semibold">Sylas Omondi</h1>
           <p className="text-sm font-semibold text-[var(--muted)]">
-            Junior – Mid Level Frontend Web Developer / Project Coordinator
+            Junior – Mid Level Fullstack Web Developer / Project Coordinator
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-[var(--muted)]">
             <span>Kenya</span>
@@ -70,9 +70,9 @@ export default function ResumePage() {
 
         <Section title="Professional Summary">
           <p className="text-sm text-[var(--muted)]">
-            Frontend-focused web developer with hands-on experience building real-world
+            Fullstack web developer with hands-on experience building real-world
             applications, dashboards, and client-facing systems. Comfortable working
-            with React, modern JavaScript tooling, and REST APIs, with exposure to
+            with React, modern JavaScript tooling,Node.js,Django and REST APIs, with exposure to
             backend integration and deployment workflows. Experienced collaborating
             with teams, translating requirements into functional interfaces, and
             supporting projects from development through deployment. Expanding
@@ -95,7 +95,7 @@ export default function ResumePage() {
               title="APIs & Auth"
               items={["REST APIs", "JWT authentication", "Axios"]}
             />
-            <SkillGroup title="Backend exposure" items={["Django REST Framework (integration)"]} />
+            <SkillGroup title="Backend " items={["Django, Node.js,Django REST Framework (integration)"]} />
             <SkillGroup
               title="Tools & Platforms"
               items={["Git", "GitHub", "Vercel", "Render", "npm"]}
@@ -182,7 +182,7 @@ export default function ResumePage() {
 
         <Section title="Education">
           <p className="text-sm text-[var(--muted)]">
-            Bachelor of Science in Computer Technology — 2024
+            Bachelor of Science in Computer Technology — October 2024
           </p>
         </Section>
       </article>
