@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" role="img" aria-label="Headshot placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b3b2e" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d5c43" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f1e8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0b3b2e" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="420" rx="22" fill="url(#g)"/>
+  <rect x="18" y="16" width="284" height="388" rx="18" fill="url(#b)" stroke="#dcd3c2" stroke-width="2" opacity="0.35"/>
+  <circle cx="160" cy="138" r="64" fill="#f5f1e8" fill-opacity="0.1" stroke="#dcd3c2" stroke-width="6"/>
+  <path d="M106 276c0-32 27-58 54-58s54 26 54 58v34H106v-34z" fill="#f5f1e8" fill-opacity="0.15" stroke="#dcd3c2" stroke-width="6"/>
+  <path d="M138 146c3 9 11 16 22 16s19-7 22-16" stroke="#dcd3c2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="138" cy="128" r="8" fill="#f5f1e8" stroke="#dcd3c2" stroke-width="5"/>
+  <circle cx="182" cy="128" r="8" fill="#f5f1e8" stroke="#dcd3c2" stroke-width="5"/>
+  <text x="160" y="344" text-anchor="middle" fill="#f5f1e8" font-size="18" font-family="Arial, sans-serif" opacity="0.9">Replace with your photo</text>
+</svg>
+

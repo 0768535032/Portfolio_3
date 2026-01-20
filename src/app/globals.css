@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f1e8;
+  --foreground: #0e1512;
+  --muted: #4a574f;
+  --accent: #043927; /* Sacramento green */
+  --accent-2: #0d5c43;
+  --card: #ffffff;
+  --border: #dcd3c2;
+  --shadow: 0 20px 70px rgba(4, 57, 39, 0.15);
+}
+
+[data-theme="dark"] {
+  --background: #0b1411;
+  --foreground: #e8efe9;
+  --muted: #b8c4bb;
+  --accent: #20c997;
+  --accent-2: #14a57a;
+  --card: #101a16;
+  --border: #1f2b26;
+  --shadow: 0 20px 70px rgba(20, 165, 122, 0.15);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, rgba(4, 57, 39, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 10%, rgba(13, 92, 67, 0.08), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(4, 57, 39, 0.07), transparent 30%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fdfdfd;
+}
