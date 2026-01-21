@@ -180,7 +180,7 @@ export default function Home() {
             and production-ready interfaces.
           </h1>
           <p className="mt-4 max-w-2xl text-base text-[var(--muted)]">
-            I’m a techenthusiast and startup co-founder at Copyme. I’m comfortable
+            I’m a tech enthusiast and startup co-founder at Copyme. I’m comfortable
             with React, modern JavaScript tooling,Node.js,Django and REST APIs, and auth flows, with
             exposure to Django REST integration and deployment workflows. I also
             support delivery through project coordination—turning requirements into
