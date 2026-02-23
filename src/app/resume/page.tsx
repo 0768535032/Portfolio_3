@@ -70,8 +70,8 @@ export default function ResumePage() {
 
         <Section title="Professional Summary">
           <p className="text-sm text-[var(--muted)]">
-            Fullstack web developer with hands-on experience building real-world
-            applications, dashboards, and client-facing systems. Comfortable working
+            Software engineer with hands-on experience building real-world
+            software solutions such as applications, dashboards, and client-facing systems. Comfortable working
             with React, modern JavaScript tooling,Node.js,Django and REST APIs, with exposure to
             backend integration and deployment workflows. Experienced collaborating
             with teams, translating requirements into functional interfaces, and
